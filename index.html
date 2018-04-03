@@ -6,12 +6,19 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/public.css">
-	<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
-	<!-- <link rel="stylesheet" href="css/swipebox.css"> -->
 </head>
 <body>
 	<!-- banner -->
-	<div class="banner">
+	<div id="top_nav">
+		<a href="#banner" class="nav_left">个人主页</a>
+		<div class="nav_right">
+			<a href="#about">个人信息</a>
+			<a href="#skills">技能评估</a>
+			<a href="#portfolio">作品介绍</a>
+			<a href="#contact">联系方式</a>
+		</div>
+	</div>
+	<div class="banner" id="banner">
 		<div class="container">
 			<div class="col-md-4 col-sm-6 col-xs-12 b-part1">
 				<img src="img/1.jpg" alt=" " />
@@ -29,14 +36,18 @@
 				<a href="" class="fa qq"><span>&#xe630;</span></a>
 				<a href="" class="fa weibo"><span>&#xe63e;</span></a>
 				<a href="" class="fa weixin"><span>&#xe66a;</span></a>
-				<!-- <a href="#"><i class="fa fa-facebook" aria-hidden="true">&#xe630;</i></a>
-				<a href="#"><i class="fa fa-linkedin" aria-hidden="true">&#xe630;</i></a>
-				<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true">&#xe66a;</i></a>
-				<a href="#"><i class="fa fa-vimeo" aria-hidden="true">&#xe676;</i></a>
-				<a href="#"><i class="fa fa-google-plus" aria-hidden="true">&#xe611;</i></a>
-				<a href="#"><i class="fa fa-tumblr" aria-hidden="true">&#xe6cf;</i></a> -->
-				
-			
+				<div class="qq_erwei qq_erwei1">
+					<span>◆</span>
+					<img src="img/qq.jpg" alt="">
+				</div>
+				<div class="qq_erwei weibo_erwei">
+					<span>◆</span>
+					<img src="img/weibo.png" alt="">
+				</div>
+				<div class="qq_erwei weixin_erwei">
+					<span>◆</span>
+					<img src="img/weixin.png" alt="">
+				</div>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -49,7 +60,7 @@
 			<h3 class="title">个人信息</h3>
 			<div class="col-md-8 about-left">
 				<p>我叫段松蓉，来自山西运城，现就读于山西省财政税务专科学校，将于今年7月毕业。因对代码感兴趣，所以选择做一名全栈工程师，开发更多让客户满意的网站。 我的业余爱好是喜欢看一些悬疑类型的书籍、喜欢听音乐。我的性格比较文静，性情温和，与同学相处融洽，有团队意识，做事比较细心，认真。同时，也是一个积极向上，不断进取的人。</p>
-				<p>通过这段时间的培训，可以熟练操作PS，会使用切图工具，在HTML、CSS方面，联系过一些项目，练习过小米官网与苏宁易购的布局。</p>
+				<p>通过这段时间的培训，可以熟练操作PS，会使用切图工具，在HTML、CSS方面，练习过一些项目，练习过小米官网与苏宁易购的布局。</p>
 			</div>
 			<div class="col-md-4 about-right">
 				<ul type="circle">
@@ -67,7 +78,7 @@
 	<!--关于我结束-->
 
 	<!--技能开始-->
-	<div class="skills">
+	<div id="skills" class="skills">
 		<div class="container">
 			<h3 class="title title1 title2"> 技能评估</h3>
 				<div class="skills-info">
@@ -116,8 +127,7 @@
 					</div>
 				</div>
 				<div class="clearfix"> </div>
-			</div>
-				
+			</div>	
 		</div>
 	</div>
 	<!--技能结束-->
@@ -125,141 +135,484 @@
 
 	<!--作品介绍-->
 	<div id="portfolio" class="portfolio">
-		<div class="container">
+		<div id="container">
 			<h3 class="title title1">作品介绍</h3>
 			<div class="sap_tabs">			
 				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
 					<ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay=".7s">
-						<li class="resp-tab-item resp-tab-item1"><span>All</span></li>
+						<li class="resp-tab-item active"><span>All</span></li>
 						<li class="resp-tab-item"><span>PhotoShop</span></li>
 						<li class="resp-tab-item"><span>Design</span></li>
 						<li class="resp-tab-item"><span>Html</span></li>				
 					</ul>	
-					<div class="clearfix"> </div>	
-					<div class="container main">
+					<div class="clearfix"></div>
+					<div class="container container1 main active">
 						<div class="row">
-							<div class="col-md-4">
-								<div class="content">
-									<div class="imgbox">
-										<div class="imginner">
-											<img src="img/zuopin1.jpg" alt="" class="img-responsive">
-											<div class="mengban"></div>
-											<h1>Html.Css布局</h1>
-											<h3>企业站--宜居</h3>
-										</div>	
-									</div>
-									
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="content">
-									<div class="imgbox">
-										<div class="imginner">
-											<img src="img/zuopin2.jpg" alt="" class="img-responsive">
-											<div class="mengban"></div>
-											<h1>Html.Css布局</h1>
-											<h3>App--美丽时光</h3>
-										</div>
-									</div>
-									
-								</div>
-							</div>
-
-							<div class="col-md-4 col-sm-6">
-								<div class="content">
-									<div class="imgbox">
-										<div class="imginner">
-											<img src="img/zuopin3.jpg" alt="" class="img-responsive">
-											<div class="mengban"></div>
-											<h1>Html.Css布局</h1>
-											<h3>pc端--苏宁易购</h3>
-										</div>
-									</div>
-									
-								</div>
-							</div>
-
-							<div class="col-md-4 col-sm-6">
-								<div class="content">
-									<div class="imgbox">
-										<div class="imginner">
-											<img src="img/zuopin4.jpg" alt="" class="img-responsive">
-											<div class="mengban"></div>
-											<h1>Html.Css布局</h1>
-											<h3>pc端--小米官网</h3>
-										</div>
-									</div>
-									
-								</div>
-							</div>
-
-							<div class="col-md-4 col-sm-6">
-								<div class="content">
-									<div class="imgbox">
-										<div class="imginner">
-											<img src="img/zuopin5.jpg" alt="" class="img-responsive">
-											<div class="mengban"></div>
-											<h1>界面设计</h1>
-											<h3>pc端--解馋坊</h3>
-										</div>
-									</div>
-									
-								</div>
-							</div>
-
-							<div class="col-md-4 col-sm-6">
-								<div class="content">
-									<div class="imgbox">
-										<div class="imginner">
-											<img src="img/zuopin6.jpg" alt="" class="img-responsive">
-											<div class="mengban"></div>
-											<h1>界面设计</h1>
-											<h3>移动端--QQ音乐</h3>
-										</div>
-									</div>
-									
-								</div>
-							</div>
-
-							<div class="col-md-4 col-sm-6">
-								<div class="content">
-									<div class="imgbox">
-										<div class="imginner">
-											<img src="img/zuopin10.jpg" alt="" class="img-responsive">
-											<div class="mengban"></div>
-											<h1>PhotoShop</h1>
-											<h3>表情包</h3>
-										</div>
-									</div>
-									
-								</div>
-							</div>
-
-							<div class="col-md-4 col-sm-6">
-								<div class="content">
-									<div class="imgbox">
-										<div class="imginner">
-											<img src="img/zuopin8.jpg" alt="" class="img-responsive">
-											<div class="mengban"></div>
-											<h1>PhotoShop</h1>
-											<h3>扁平icon</h3>
+							<div class="goodlist">
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<div class="mengban"></div>
+												<img src="img/zuopin1.jpg" alt="" class="img-responsive">
+												<h1>Html.Css布局</h1>
+												<h3>企业站--宜居</h3>
+												<a href="https://duansongrong.github.io/yiju/">&#xe631;</a>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-
-							<div class="col-md-4 col-sm-6">
-								<div class="content">
-									<div class="imgbox">
-										<div class="imginner">
-											<img src="img/zuopin9.jpg" alt="" class="img-responsive">
-											<div class="mengban"></div>
-											<h1>PhotoShop</h1>
-											<h3>矢量图标</h3>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin2.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>App--美丽时光</h3>
+												<a href="https://duansongrong.github.io/shopapp/">&#xe631;</a>
+											</div>
 										</div>
 									</div>
-									
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/z15.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>pc端--苏宁易购</h3>
+												<a href="https://duansongrong.github.io/suningshouye/">&#xe631;</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/z14.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>pc端--小米官网</h3>
+												<a href="https://duansongrong.github.io/xiaomi7/">&#xe631;</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/z13.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>pc端--天猫官网</h3>
+												<a href="https://duansongrong.github.io/tianmao/">&#xe631;</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/geren.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>响应式--个人主页</h3>
+												<a href="https://duansongrong.github.io/personal/">&#xe631;</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/z18.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>移动端--今日头条</h3>
+												<a href="https://duansongrong.github.io/jinritoutiao/">&#xe631;</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/z19.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>App--todolist</h3>
+												<a href="https://duansongrong.github.io/todo/">&#xe631;</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/z20.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>App--天气</h3>
+												<a href="https://duansongrong.github.io/weather2/">&#xe631;</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container container1 main">
+						<div class="row">
+							<div class="goodlist">
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin10.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>PhotoShop</h1>
+												<h3>表情包</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin8.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>PhotoShop</h1>
+												<h3>扁平icon</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin9.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>PhotoShop</h1>
+												<h3>矢量图标</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/z11.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>企业站--宜居</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/z12.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>App--美丽时光</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin3.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>pc端--苏宁易购</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin4.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>pc端--小米官网</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin5.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>界面设计</h1>
+												<h3>pc端--解馋坊</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin6.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>界面设计</h1>
+												<h3>移动端--QQ音乐</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container container1 main">
+						<div class="row">
+							<div class="goodlist active">
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/z16.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>pc端--小米官网</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin5.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>界面设计</h1>
+												<h3>pc端--解馋坊</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin6.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>界面设计</h1>
+												<h3>移动端--QQ音乐</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin10.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>PhotoShop</h1>
+												<h3>表情包</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin8.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>PhotoShop</h1>
+												<h3>扁平icon</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin9.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>PhotoShop</h1>
+												<h3>矢量图标</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin1.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>企业站--宜居</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin2.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>App--美丽时光</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/z17.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>pc端--苏宁易购</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container container1 main">
+						<div class="row">
+							<div class="goodlist">
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<div class="mengban"></div>
+												<img src="img/zuopin1.jpg" alt="" class="img-responsive">
+												<h1>Html.Css布局</h1>
+												<h3>企业站--宜居</h3>
+												<a href="https://duansongrong.github.io/yiju/">&#xe631;</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin2.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>App--美丽时光</h3>
+												<a href="https://duansongrong.github.io/shopapp/">&#xe631;</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/z15.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>pc端--苏宁易购</h3>
+												<a href="https://duansongrong.github.io/suningshouye/">&#xe631;</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/z14.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>pc端--小米官网</h3>
+												<a href="https://duansongrong.github.io/xiaomi7/">&#xe631;</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/z13.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>pc端--天猫官网</h3>
+												<a href="https://duansongrong.github.io/tianmao/">&#xe631;</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/geren.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>Html.Css布局</h1>
+												<h3>响应式--个人主页</h3>
+												<a href="https://duansongrong.github.io/personal/">&#xe631;</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin10.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>PhotoShop</h1>
+												<h3>表情包</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin8.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>PhotoShop</h1>
+												<h3>扁平icon</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="content">
+										<div class="imgbox">
+											<div class="imginner">
+												<img src="img/zuopin9.jpg" alt="" class="img-responsive">
+												<div class="mengban"></div>
+												<h1>PhotoShop</h1>
+												<h3>矢量图标</h3>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -273,7 +626,7 @@
 
 
 	<!--联系方式开始-->
-	<div class="contact">
+	<div id="contact" class="contact">
 		<div class="container">
 			<h3 class="title title1">联系方式</h3>
 			<div class="col-md-4 c-w3l">
@@ -303,10 +656,11 @@
 	<!--联系方式结束-->
 
 	<!--footer-->
-	<div class="footer-agileinfo">
-		<p> &copy; 2016 Curriculum vitae. All Rights Reserved</p>
-	</div>
+	<!--<div class="footer-agileinfo">-->
+		<!--<p> &copy; 2016 Curriculum vitae. All Rights Reserved</p>-->
+	<!--</div>-->
 <!--//footer-->
-
+	<div class="totop"><span>&#xe632;</span></div>
 </body>
+<script src="js/index.js"></script>
 </html>
